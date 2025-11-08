@@ -210,10 +210,14 @@ body {
     animation: pulse 2s infinite;
 }
 
+/* White text with neon green glow effect for availability */
 .nav-availability .availability-text {
-    color: #10b981 !important;
-    font-weight: 600;
-    text-shadow: 0 0 10px rgba(16, 185, 129, 0.3);
+    color: #ffffff !important;
+    text-shadow: 
+        0 0 5px #00ff00,
+        0 0 10px #00ff00,
+        0 0 15px #00ff00,
+        0 0 20px #00ff00 !important;
 }
 
 @keyframes pulse {
