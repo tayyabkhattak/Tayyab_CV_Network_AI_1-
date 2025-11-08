@@ -218,7 +218,7 @@ body {
 }
 
 .nav-availability .availability-text {
-    animation: colorBlink 1s infinite !important;
+    animation: colorBlink 2s infinite !important;
     text-shadow: none !important;
 }
 
