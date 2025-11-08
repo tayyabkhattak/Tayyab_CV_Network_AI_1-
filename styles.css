@@ -202,19 +202,26 @@ body {
     border: none;
 }
 
-.availability-dot {
-    width: 8px;
-    height: 8px;
-    background: #10b981;
-    border-radius: 50%;
-    animation: pulse 2s infinite;
-}
-
 /* Blinking animation between white and green */
 @keyframes colorBlink {
     0% { color: #ffffff; }
     50% { color: #00ff00; }
     100% { color: #ffffff; }
+}
+
+/* Dot blinking animation between white and neon green */
+@keyframes dotBlink {
+    0% { background: #ffffff; }
+    50% { background: #00ff00; }
+    100% { background: #ffffff; }
+}
+
+.availability-dot {
+    width: 8px;
+    height: 8px;
+    background: #ffffff;
+    border-radius: 50%;
+    animation: dotBlink 2s infinite;
 }
 
 .nav-availability .availability-text {
