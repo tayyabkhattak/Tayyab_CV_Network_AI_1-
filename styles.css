@@ -227,13 +227,13 @@ body {
 .availability-dot {
     width: 8px;
     height: 8px;
-    background: #00ff00;
+    background: #10d876;
     border-radius: 50%;
     animation: subtlePulse 3s ease-in-out infinite;
 }
 
 .nav-availability .availability-text {
-    color: #00ff00 !important;
+    color: #10d876 !important;
     animation: textPulse 3s ease-in-out infinite !important;
     text-shadow: none !important;
 }
