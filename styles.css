@@ -210,14 +210,16 @@ body {
     animation: pulse 2s infinite;
 }
 
-/* White text with neon green glow effect for availability */
+/* Blinking animation between white and green */
+@keyframes colorBlink {
+    0% { color: #ffffff; }
+    50% { color: #00ff00; }
+    100% { color: #ffffff; }
+}
+
 .nav-availability .availability-text {
-    color: #ffffff !important;
-    text-shadow: 
-        0 0 5px #00ff00,
-        0 0 10px #00ff00,
-        0 0 15px #00ff00,
-        0 0 20px #00ff00 !important;
+    animation: colorBlink 1s infinite !important;
+    text-shadow: none !important;
 }
 
 @keyframes pulse {
