@@ -59,6 +59,7 @@ function animateCounters() {
 
     counters.forEach(counter => {
         const target = +counter.getAttribute('data-target');
+        const suffix = counter.getAttribute('data-suffix') || '';
         const increment = target / speed;
 
         function updateCounter() {
@@ -67,7 +68,7 @@ function animateCounters() {
                 counter.innerText = Math.ceil(current + increment);
                 setTimeout(updateCounter, 10);
             } else {
-                counter.innerText = target + (target === 1000 ? '+' : '');
+                counter.innerText = target + (target === 1000 ? '+' : suffix);
             }
         }
 
