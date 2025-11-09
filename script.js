@@ -8,8 +8,14 @@ const navLinks = document.querySelectorAll('.nav-menu a');
 
 // Toggle mobile menu
 hamburger?.addEventListener('click', () => {
-    hamburger.classList.toggle('active');
-    navMenu.classList.toggle('active');
+    const isActive = navMenu.classList.contains('active');
+    if (isActive) {
+        hamburger.classList.remove('active');
+        navMenu.classList.remove('active');
+    } else {
+        hamburger.classList.add('active');
+        navMenu.classList.add('active');
+    }
 });
 
 // Close menu when clicking nav links
