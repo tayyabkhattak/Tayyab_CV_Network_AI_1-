@@ -74,7 +74,12 @@ function animateCounters() {
                 counter.innerText = Math.ceil(current + increment);
                 setTimeout(updateCounter, 10);
             } else {
-                counter.innerText = target + (target === 1000 ? '+' : suffix);
+                // Always show '+' for 1000 and 2000 targets
+                if (target === 1000 || target === 2000) {
+                    counter.innerText = target + '+';
+                } else {
+                    counter.innerText = target + suffix;
+                }
             }
         }
 
